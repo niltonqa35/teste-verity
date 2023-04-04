@@ -14,7 +14,7 @@ Feature: Validacao e Acesso ao Site
   Scenario: validacao de Titulo Nossas solucoes
   Given que o usuario acesse a url "https://www.verity.com.br/nosso-jeito"
   When selecionar a aba Verity
-  Then valido a mensagem Nossas soluoees
+  Then valido a mensagem Nossas solucoes
  
   
   @tag3

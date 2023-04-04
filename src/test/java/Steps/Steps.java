@@ -19,7 +19,7 @@ public class Steps extends Formulario {
 	@When("selecionar a aba Verity")
 	public void selecionar_a_aba_verity() throws InterruptedException {
 	clicar(e.getBtnVerity());
-	pausa(5000);
+	pausa(3000);
 	clicar(e.getMsg());    
 	}
 	@When("valido a mensagem culture and tech")
@@ -29,11 +29,9 @@ public class Steps extends Formulario {
 	  fecharNavegador(); 
 	  
 	}
-	@Then("valido a mensagem Nossas soluoees")
-	public void valido_a_mensagem_nossas_soluoees() throws InterruptedException {
-	pausa(5000);
-	clicar(e.getMsg());
-	pausa(3000);
+	@Then("valido a mensagem Nossas solucoes")
+	public void valido_a_mensagem_nossas_solucoes() throws InterruptedException {
+    pausa(3000);
 	validarTitulo(e.getTextoNossasSolucoes(), "Nossas soluções_");	
 	fecharNavegador(); 
 	}
@@ -45,7 +43,8 @@ public class Steps extends Formulario {
 	   
 	}
 	@When("preencher o formulario Vamos conversar")
-	public void preencher_o_formulario_vamos_conversar() {
+	public void preencher_o_formulario_vamos_conversar() throws InterruptedException {
+	 pausa(3000);
 	preencherFormulario();	
 	}
 	@When("selecionar o checkbox Aceito receber mensagens da Verity")

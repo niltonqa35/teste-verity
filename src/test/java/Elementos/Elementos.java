@@ -14,7 +14,7 @@ public class Elementos {
 	private By btnVerity = By.id("img_comp-kevyodng");
 	private By textoNossasSolucoes = By.xpath("//*[@id=\"comp-kwv1yx4h\"]/h1/span");
 	private By textoCultureAndTech = By.xpath("//*[@id=\"comp-kwv1yb5l\"]/p/span/span/span/span/span/span");
-	private By msg = By.cssSelector("#comp-lfhfnha7 > div > svg");
+	private By msg = By.cssSelector("#comp-lfhfnha7 > div > svg > g > path:nth-child(1)");
 	
 
 	public By getBtnContato() {
